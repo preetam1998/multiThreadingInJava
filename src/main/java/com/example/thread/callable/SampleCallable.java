@@ -38,7 +38,7 @@ public class SampleCallable {
 
 class MyCallable implements Callable<String> {
 
-    String name;
+    String name ;
 
     public MyCallable(String name) {
         this.name = name;
