@@ -1,4 +1,4 @@
-package com.example.thread.callable.restaurant_problem;
+package com.example.thread.wait_notify.restaurant_problem;
 
 
 public class ChefThread extends Thread{
@@ -12,8 +12,8 @@ public class ChefThread extends Thread{
     public void run() {
         System.out.println("Chef - Preparing order");
         try {
+            Thread.sleep(5000);
             synchronized (lock) {
-                Thread.sleep(5000);
                 System.out.println("Chef - Order Prepared");
                 lock.notify();
             }

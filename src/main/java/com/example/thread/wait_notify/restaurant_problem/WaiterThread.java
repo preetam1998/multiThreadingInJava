@@ -1,4 +1,4 @@
-package com.example.thread.callable.restaurant_problem;
+package com.example.thread.wait_notify.restaurant_problem;
 
 import java.util.Objects;
 
